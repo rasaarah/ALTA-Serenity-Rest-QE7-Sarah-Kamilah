@@ -45,7 +45,7 @@ public class ReqresUnknownStepDef {
     }
     @And("Validate get unknown list user json schema")
     public void validateGetUnknownListUserJsonSchema() {
-        File json = new File(ReqresAPI.JSON_SCHEMA+"/GetListUserJsonSchema.json");
+        File json = new File(ReqresAPI.JSON_SCHEMA+"/GetUnknownListUser.json");
         SerenityRest.then()
                 .assertThat()
                 .body(JsonSchemaValidator.matchesJsonSchema(json));
